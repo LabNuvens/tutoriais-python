@@ -1,0 +1,14 @@
+name: tutoriais-python
+channels: 
+    - conda-forge
+dependencies:
+    - python=3.*
+    - pip
+    - matplotlib
+    - scipy
+    - xarray
+    - cartopy
+    - arm_pyart
+    - wradlib
+    - pip:
+        - metpy
