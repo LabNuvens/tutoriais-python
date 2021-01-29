@@ -1,0 +1,196 @@
+altitude:
+	data: <ndarray of type: float64 and shape: (1,)>
+	units: meters
+	long_name: Altitude
+	standard_name: Altitude
+	positive: up
+altitude_agl: None
+antenna_transition: None
+azimuth:
+	data: <ndarray of type: float32 and shape: (2521,)>
+	comment: Azimuth of antenna relative to true north
+	long_name: azimuth_angle_from_true_north
+	standard_name: beam_azimuth_angle
+	units: degrees
+	axis: radial_azimuth_coordinate
+elevation:
+	data: <ndarray of type: float32 and shape: (2521,)>
+	comment: Elevation of antenna relative to the horizontal plane
+	long_name: elevation_angle_from_horizontal_plane
+	standard_name: beam_elevation_angle
+	units: degrees
+	axis: radial_elevation_coordinate
+fields:
+	spectrum_width:
+		data: <ndarray of type: float32 and shape: (2521, 500)>
+		_FillValue: -9999.0
+		coordinates: elevation azimuth range
+		long_name: Doppler spectrum width
+		standard_name: doppler_spectrum_width
+		units: m/s
+	corrected_velocity:
+		data: <ndarray of type: float32 and shape: (2521, 500)>
+		_FillValue: -9999.0
+		coordinates: elevation azimuth range
+		long_name: Corrected mean doppler velocity
+		standard_name: corrected_velocity
+		units: m/s
+	corrected_reflectivity:
+		data: <ndarray of type: float32 and shape: (2521, 500)>
+		_FillValue: -9999.0
+		coordinates: elevation azimuth range
+		long_name: Corrected reflectivity
+		standard_name: corrected_reflectivity
+		units: dBZ
+	reflectivity:
+		data: <ndarray of type: float32 and shape: (2521, 500)>
+		_FillValue: -9999.0
+		coordinates: elevation azimuth range
+		long_name: Reflectivity
+		standard_name: equivalent_reflectivity_factor
+		units: dBZ
+fixed_angle:
+	data: <ndarray of type: float32 and shape: (7,)>
+	units: degrees
+	long_name: Target angle for sweep
+	standard_name: target_fixed_angle
+instrument_parameters:
+	prt_ratio:
+		data: <ndarray of type: float32 and shape: (2521,)>
+		units: unitless
+		meta_group: instrument_parameters
+		long_name: Pulse repetition frequency ratio
+	radar_beam_width_h:
+		data: <ndarray of type: float32 and shape: (1,)>
+		units: degrees
+		meta_group: radar_parameters
+		long_name: Antenna beam width H polarization
+	prt_mode:
+		data: <ndarray of type: |S9 and shape: (7,)>
+		units: unitless
+		meta_group: instrument_parameters
+		comments: Pulsing mode Options are: "fixed", "staggered", "dual". Assumed "fixed" if missing.
+		long_name: Pulsing mode
+	n_samples:
+		data: <ndarray of type: int32 and shape: (2521,)>
+		units: unitless
+		meta_group: instrument_parameters
+		long_name: Number of samples used to compute moments
+	unambiguous_range:
+		data: <ndarray of type: float32 and shape: (2521,)>
+		units: meters
+		meta_group: instrument_parameters
+		comments: Unambiguous range
+		long_name: Unambiguous range
+	prt:
+		data: <ndarray of type: float32 and shape: (2521,)>
+		units: seconds
+		meta_group: instrument_parameters
+		comments: Pulse repetition time. For staggered prt, also see prt_ratio.
+		long_name: Pulse repetition time
+	frequency:
+		data: <ndarray of type: float32 and shape: (1,)>
+		units: s-1
+		meta_group: instrument_parameters
+		long_name: Radiation frequency
+	nyquist_velocity:
+		data: <ndarray of type: float32 and shape: (2521,)>
+		units: meters_per_second
+		meta_group: instrument_parameters
+		comments: Unambiguous velocity
+		long_name: Nyquist velocity
+	pulse_width:
+		data: <ndarray of type: float32 and shape: (2521,)>
+		units: seconds
+		meta_group: instrument_parameters
+		comments: Pulse width
+		long_name: Pulse width
+	radar_beam_width_v:
+		data: <ndarray of type: float32 and shape: (1,)>
+		units: degrees
+		meta_group: radar_parameters
+		long_name: Antenna beam width V polarization
+latitude:
+	data: <ndarray of type: float64 and shape: (1,)>
+	units: degrees_north
+	long_name: Latitude
+	standard_name: Latitude
+longitude:
+	data: <ndarray of type: float64 and shape: (1,)>
+	units: degrees_east
+	long_name: Longitude
+	standard_name: Longitude
+nsweeps: 7
+ngates: 500
+nrays: 2521
+radar_calibration: None
+range:
+	data: <ndarray of type: float32 and shape: (500,)>
+	comment: Coordinate variable for range. Range to center of each bin.
+	long_name: range_to_measurement_volume
+	standard_name: projection_range_coordinate
+	meters_to_center_of_first_gate: 0.0
+	meters_between_gates: 500.0
+	units: meters
+	spacing_is_constant: true
+	axis: radial_range_coordinate
+scan_rate:
+	data: <ndarray of type: float32 and shape: (2521,)>
+	units: degrees_per_second
+	long_name: Antenna angle scan rate
+scan_type: ppi
+sweep_end_ray_index:
+	data: <ndarray of type: int32 and shape: (7,)>
+	units: count
+	long_name: Index of last ray in sweep, 0-based
+sweep_mode:
+	data: <ndarray of type: |S20 and shape: (7,)>
+	units: unitless
+	long_name: Sweep mode
+	standard_name: sweep_mode
+	comment: Options are: "sector", "coplane", "rhi", "vertical_pointing", "idle", "azimuth_surveillance", "elevation_surveillance", "sunscan", "pointing", "manual_ppi", "manual_rhi"
+sweep_number:
+	data: <ndarray of type: int32 and shape: (7,)>
+	units: count
+	long_name: Sweep number
+	standard_name: sweep_number
+sweep_start_ray_index:
+	data: <ndarray of type: int32 and shape: (7,)>
+	units: count
+	long_name: Index of first ray in sweep, 0-based
+target_scan_rate:
+	data: <ndarray of type: float32 and shape: (7,)>
+	units: degrees_per_second
+	long_name: Target scan rate for sweep
+time:
+	data: <ndarray of type: float64 and shape: (2521,)>
+	comment: Coordinate variable for time. Time at the center of each ray, in fractional seconds since the global variable time_coverage_start
+	long_name: time_in_seconds_since_volume_start
+	standard_name: time
+	units: seconds since 2017-11-15T21:40:24Z
+	calendar: gregorian
+metadata:
+	comment:
+	site_name: SaoRoque
+	template_name: 250km_15elev_600hz
+	elevation_beam: 2.0
+	references:
+	sdp_name: UNKNOWN SDP
+	gamic_version: 8
+	title:
+	gamic_object: PVOL
+	sdp_version: HW protocol: 2.1.0; PCI DSP firmware: 5.0.5; PCI FPGA firmware: 5.0.1; IFD FPGA firmware: 5.0.4; ENIGMA software: 1.1.11
+	source:
+	version: 1.3
+	instrument_name:
+	gamic_date: 2017-11-15T21:40:24.000Z
+	azimuth_beam: 2.0
+	institution:
+	sw_version: generic-1000:frog-iacit:042913:150040
+	Conventions: CF/Radial instrument_parameters
+	history:
+	host_name: srofrog
+	simulated: off
+	original_container: GAMIC-HDF5
+	sets_scheduled: 15
+	software: FROG

@@ -1,0 +1,175 @@
+File ../Data/RADAR/CTH/level_0_hdf5/2017-11-15/PNOVA2-20171115214004.HDF5
+altitude:
+	data: <ndarray of type: float64 and shape: (1,)>
+	units: meters
+	long_name: Altitude
+	standard_name: Altitude
+	positive: up
+altitude_agl: None
+antenna_transition: None
+azimuth:
+	data: <ndarray of type: float64 and shape: (2880,)>
+	comment: Azimuth of antenna relative to true north
+	long_name: azimuth_angle_from_true_north
+	standard_name: beam_azimuth_angle
+	units: degrees
+	axis: radial_azimuth_coordinate
+elevation:
+	data: <ndarray of type: float64 and shape: (2880,)>
+	comment: Elevation of antenna relative to the horizontal plane
+	long_name: elevation_angle_from_horizontal_plane
+	standard_name: beam_elevation_angle
+	units: degrees
+	axis: radial_elevation_coordinate
+fields:
+	corrected_reflectivity:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: dBZ
+		long_name: corrected_reflectivity
+		coordinates: elevation azimuth range
+	differential_phase:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: deg
+		long_name: differential_phase
+		coordinates: elevation azimuth range
+	cross_correlation_ratio:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: dimensionless
+		long_name: cross_correlation_ratio
+		coordinates: elevation azimuth range
+	filtered_differential_phase:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: deg
+		long_name: filtered_differential_phase
+		coordinates: elevation azimuth range
+	spectrum_width:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: m/s
+		long_name: spectrum_width
+		coordinates: elevation azimuth range
+	MI:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: g m-3
+		long_name: Ice Water Mass
+		standard_name: Ice Water Mass
+		fill_value: 1e+20
+	reflectivity:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: dBZ
+		long_name: reflectivity
+		coordinates: elevation azimuth range
+	MW:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: g m-3
+		long_name: Liquid Water Mass
+		standard_name: Liquid Water Mass
+		fill_value: 1e+20
+	differential_reflectivity:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: dBZ
+		long_name: differential_reflectivity
+		coordinates: elevation azimuth range
+	specific_differential_phase:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: deg/km
+		long_name: specific_differential_phase
+		coordinates: elevation azimuth range
+	FH:
+		data: <ndarray of type: int64 and shape: (2880, 960)>
+		units: unitless
+		long_name: Hydrometeor ID
+		standard_name: Hydrometeor ID
+		fill_value: 1e+20
+	velocity:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: m/s
+		long_name: velocity
+		coordinates: elevation azimuth range
+	FI:
+		data: <ndarray of type: float64 and shape: (2880, 960)>
+		units: dimensionless
+		long_name: Ice Mass Fraction
+		standard_name: Ice Mass Fraction
+		fill_value: 1e+20
+fixed_angle:
+	data: <ndarray of type: float64 and shape: (8,)>
+	units: degrees
+	long_name: Target angle for sweep
+	standard_name: target_fixed_angle
+instrument_parameters:
+	unambiguous_range:
+		data: <ndarray of type: float64 and shape: (2880,)>
+		units: meters
+		meta_group: instrument_parameters
+		comments: Unambiguous range
+		long_name: Unambiguous range
+	nyquist_velocity:
+		data: <ndarray of type: float64 and shape: (2880,)>
+		units: meters_per_second
+		meta_group: instrument_parameters
+		comments: Unambiguous velocity
+		long_name: Nyquist velocity
+latitude:
+	data: <ndarray of type: float64 and shape: (1,)>
+	units: degrees_north
+	long_name: Latitude
+	standard_name: Latitude
+longitude:
+	data: <ndarray of type: float64 and shape: (1,)>
+	units: degrees_east
+	long_name: Longitude
+	standard_name: Longitude
+nsweeps: 8
+ngates: 960
+nrays: 2880
+radar_calibration: None
+range:
+	data: <ndarray of type: float32 and shape: (960,)>
+	comment: Coordinate variable for range. Range to center of each bin.
+	long_name: range_to_measurement_volume
+	standard_name: projection_range_coordinate
+	meters_to_center_of_first_gate: 125.0
+	meters_between_gates: 250.0
+	units: meters
+	spacing_is_constant: 1
+	axis: radial_range_coordinate
+scan_rate: None
+scan_type: ppi
+sweep_end_ray_index:
+	data: <ndarray of type: int64 and shape: (8,)>
+	units: count
+	long_name: Index of last ray in sweep, 0-based
+sweep_mode:
+	data: <ndarray of type: |S10 and shape: (8,)>
+	units: unitless
+	long_name: Sweep mode
+	standard_name: sweep_mode
+	comment: Options are: "sector", "coplane", "rhi", "vertical_pointing", "idle", "azimuth_surveillance", "elevation_surveillance", "sunscan", "pointing", "manual_ppi", "manual_rhi"
+sweep_number:
+	data: <ndarray of type: int32 and shape: (8,)>
+	units: count
+	long_name: Sweep number
+	standard_name: sweep_number
+sweep_start_ray_index:
+	data: <ndarray of type: int64 and shape: (8,)>
+	units: count
+	long_name: Index of first ray in sweep, 0-based
+target_scan_rate: None
+time:
+	data: <ndarray of type: float64 and shape: (2880,)>
+	comment: Coordinate variable for time. Time at the center of each ray, in fractional seconds since the global variable time_coverage_start
+	long_name: time_in_seconds_since_volume_start
+	standard_name: time
+	units: seconds since 2017-11-15T21:40:04Z
+	calendar: gregorian
+metadata:
+	comment:
+	title:
+	Conventions: CF/Radial instrument_parameters
+	source: Brazil Radar
+	version: 1.3
+	references:
+	instrument_name:
+	original_container: ../Data/RADAR/CTH/level_0_hdf5/2017-11-15/PNOVA2-20171115214004.HDF5
+	institution:
+	history:
