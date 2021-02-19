@@ -31,6 +31,8 @@ Basta clicar no badge "launch binder" ao lado do título do repositório para ab
 ## Sobre o [Jupyter](https://jupyter.org/)
 O Jupyter é um ambiente de desenvolvimento em diversas linguagens de programação, construído primeiramente para Python. A versão mais simples, o Jupyter Notebook, é um navegador web que permite o desenvolvimento de códigos com texto [Markdown](https://www.markdownguide.org/) e código integrados no formato `.ipynb`. Aprenda mais sobre como configurar e usar o Jupyter Notebook [neste capítulo do curso de introdução à ciência de dados terrestres do Earth Lab](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/jupyter-python/).
 
+---
+
 ### Autores
 
 Camila Lopes ([cclopes.me](https://cclopes.me/), camila.lopes@iag.usp.br)
