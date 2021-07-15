@@ -1,7 +1,7 @@
 ![Logo do Lab](https://i.imgur.com/id9h6xi.png)
 
 # `tutoriais-python` [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LabNuvens/tutoriais-python/HEAD)
-Esta é uma compilação de guias e exemplos de como lidar com dados de radar, satélite e outros do Laboratório de Física de Nuvens do IAG-USP usando a linguagem Python.
+Esta é uma compilação de guias e exemplos de como lidar com dados de radar, satélite e outros do [Laboratório de Física de Nuvens do IAG-USP](http://labnuvens.iag.usp.br) usando a linguagem Python.
 
 Os tutoriais estão organizados da seguinte forma:  
 - Nos arquivos `.ipynb` estão os códigos e explicações relacionadas a cada um dos tópicos;
@@ -10,9 +10,7 @@ Os tutoriais estão organizados da seguinte forma:
 É possível rodar os arquivos `.ipynb` no [Binder](https://mybinder.org/), no [SciServer](https://sciserver.org/) ou no seu editor de preferência, desde que tenha uma instalação de python associada. Veja mais informações sobre configurar sua própria instalação no tópico **0. Instalacao + Boas Praticas de Uso**.
 
 ## Esta não é uma introdução à Python!
-Estes tutoriais consideram que você já tenha um conhecimento prévio em Python, principalmente estrutura e análise de dados (listas, tuplas, dicionários, matrizes) e funções. Alguns cursos introdutórios disponíveis que podem ajudar caso você esteja começando com Python são:
-- Introdução à Ciência da Computação com Python ([Coursera](https://www.coursera.org/)): [parte 1](https://www.coursera.org/learn/ciencia-computacao-python-conceitos#syllabus) e [parte 2](https://www.coursera.org/learn/ciencia-computacao-python-conceitos-2#syllabus)
-- [Python Fundamentos para Análise de Dados](https://www.datascienceacademy.com.br/course?courseid=python-fundamentos) ([Data Science Academy](https://www.datascienceacademy.com.br/pages/home))
+Estes tutoriais consideram que você já tenha um conhecimento prévio em Python, principalmente estrutura e análise de dados (listas, tuplas, dicionários, matrizes) e funções. Alguns cursos introdutórios disponíveis que podem ajudar caso você esteja começando com Python estão [listados na página do laboratório](https://sites.google.com/iag.usp.br/labnuvens/dados-e-materiais).
 
 ## Usando o Binder
 Basta clicar no badge "launch binder" ao lado do título do repositório para abrir um ambiente do [Jupyter](https://jupyter.org/) já com as bibliotecas necessárias instaladas. **O processo de criar o ambiente pode levar poucos minutos**.
