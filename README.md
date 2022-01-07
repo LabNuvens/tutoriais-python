@@ -33,4 +33,4 @@ O Jupyter é um ambiente de desenvolvimento em diversas linguagens de programaç
 
 ### Autores
 
-Camila Lopes ([cclopes.me](https://cclopes.me/), camila.lopes@iag.usp.br)
+Camila Lopes (([cclopes.netlify.app](https://cclopes.netlify.app/)), camila.lopes@iag.usp.br)
