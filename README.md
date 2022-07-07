@@ -18,7 +18,7 @@ Basta clicar no badge acima para abrir um ambiente do [Jupyter](https://jupyter.
 
 
 ## Usando o Google Colab
-<iframe src="https://scribehow.com/embed/Usando_tutoriais-python_no_Google_Colab__5AKgjLMVSwqrW3tuvsoXUw" width="640" height="640" allowfullscreen frameborder="0"></iframe>
+[![Siga o passo-a-passo](https://i.imgur.com/yoNYUg9.png)](https://scribehow.com/shared/Usando_tutoriais-python_no_Google_Colab__5AKgjLMVSwqrW3tuvsoXUw)
 
 ## Usando o SciServer
 1. [Faça o login](https://apps.sciserver.org/login-portal/) a partir de um cadastro ou da conta do Google com o [Globus](https://www.globus.org/);
