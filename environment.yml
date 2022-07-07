@@ -2,17 +2,16 @@ name: tutoriais-python
 channels:
     - conda-forge
 dependencies:
-    - python=3.8.*
+    - python=3.*
     - pip
     - ipykernel
-    - numpy < 1.20
-    - matplotlib=3.3.3
-    - h5py=2.10.0
+    - numpy
+    - matplotlib
+    - h5py
     - scipy
     - scikit-image
     - xarray
     - cartopy
     - arm_pyart
-    - wradlib
-    - pip:
-        - metpy
+    - wradlib > 1.13
+    - metpy
