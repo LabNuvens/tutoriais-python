@@ -171,7 +171,7 @@ def read_mira(
     sweep_number["data"] = np.array([0], dtype=np.int32)
 
     sweep_mode = filemetadata("sweep_mode")
-    sweep_mode["data"] = np.array(["vertical_pointing"], dtype=np.str)
+    sweep_mode["data"] = np.array(["vertical_pointing"], dtype=str)
 
     fixed_angle = filemetadata("fixed_angle")
     fixed_angle["data"] = np.array([90.0], dtype=np.float32)
@@ -235,7 +235,7 @@ def read_mira(
     frequency["data"] = np.array([omega / 1e9], dtype=np.float32)
 
     prt_mode = filemetadata("prt_mode")
-    prt_mode["data"] = np.array(["fixed"], dtype=np.str)
+    prt_mode["data"] = np.array(["fixed"], dtype=str)
 
     prf = float(ncvars["prf"][:])
     prt = filemetadata("prt")
