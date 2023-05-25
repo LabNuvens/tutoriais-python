@@ -31,7 +31,7 @@ Basta clicar no badge acima para abrir um ambiente do [Jupyter](https://jupyter.
 6. Volte à dashboard do Jupyter (clicando no logo do Jupyter) e navegue até a pasta com o conteúdo (em `Storage/[Seu usuário]/persistent/`).
 
 ## Sobre o [Jupyter](https://jupyter.org/)
-O Jupyter é um ambiente de desenvolvimento em diversas linguagens de programação, construído primeiramente para Python. A versão mais simples, o Jupyter Notebook, é um navegador web que permite o desenvolvimento de códigos com texto [Markdown](https://www.markdownguide.org/) e código integrados no formato `.ipynb`. Aprenda mais sobre como configurar e usar o Jupyter Notebook [neste capítulo do curso de introdução à ciência de dados terrestres do Earth Lab](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/jupyter-python/).
+O Jupyter é um ambiente de desenvolvimento em diversas linguagens de programação, construído primeiramente para Python. A versão mais simples, o Jupyter Notebook, é um navegador web que permite o desenvolvimento de códigos com texto [Markdown](https://www.markdownguide.org/) e código integrados no formato `.ipynb`. Aprenda mais sobre como configurar e usar o Jupyter Notebook [neste capítulo do curso de introdução à ciência de dados terrestres do Earth Lab](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/jupyter-python/) e [neste capítulo do curso de fundamentos do Projeto Pythia](https://foundations.projectpythia.org/foundations/jupyterlab.html).
 
 ---
 
